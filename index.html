@@ -151,7 +151,7 @@
         
         async function loadAllowedMailboxes() {
             try {
-                const response = await fetch('https://code.taotile.ltd/al.txt');
+                const response = await fetch('https://yin.taotile.ltd/al.txt');
                 const text = await response.text();
                 allowedMailboxes = text.split('\n')
                     .map(line => line.trim())
