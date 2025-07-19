@@ -320,7 +320,7 @@
                     if (responseData.emails.length > 0) {
                         // 获取最新邮件的ID
                         const latestEmailId = responseData.emails[0].id;
-                        resultDiv.textContent = `正在激活账号 ${mailboxPrefix}...`;
+                        resultDiv.textContent = "正在激活账号 ${mailboxPrefix}...";
                         
                         // 获取邮件详情
                         const emailUrl = `https://mail.mdzz.uk/api/emails/${latestEmailId}`;
