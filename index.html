@@ -249,7 +249,7 @@
                     await registerAccount(mailboxPrefix);
                     
                     // 等待5秒让邮件到达
-                    resultDiv.textContent = "正在激活账号 ${mailboxPrefix}...";
+                    resultDiv.textContent = `正在激活账号 ${mailboxPrefix}...`;
                     await new Promise(resolve => setTimeout(resolve, 5000));
                     
                     // 获取邮件
